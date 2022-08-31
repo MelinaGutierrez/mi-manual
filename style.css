@@ -1,0 +1,40 @@
+header{
+    text-align: center;
+    color:aliceblue;
+    font-size: large;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+h2{
+    color:darkmagenta;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+td{
+    text-align:left;
+}
+body{
+    text-align: center;
+    display: table-cell;
+    font-family: Verdana, sans-serif;
+    background-color:plum;
+}
+table{
+    text-align: center;
+    align-items: center;
+    border-collapse: collapse;
+    margin-left: 100;
+}
+table, td, th {
+    align-content: middle;
+    border: 3px solid rgb(74, 74, 74);
+}
+section{
+    align-content: center;
+}
+#TableSection
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+}
