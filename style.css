@@ -17,14 +17,17 @@ body{
     display: table-cell;
     font-family: Verdana, sans-serif;
     background-color:plum;
+    
 }
 table{
+    display: block;        
+    margin: auto;
+    width: 60%;
     text-align: center;
     align-items: center;
-    border-collapse: collapse;
-    margin-left: 100;
+    border-collapse: collapse;    
 }
-table, td, th {
+td, th {
     align-content: middle;
     border: 3px solid rgb(74, 74, 74);
 }
