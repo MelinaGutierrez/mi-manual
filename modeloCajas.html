@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen" />   
+
+</head>
+<body>
+    <nav id="menu">
+        <ul>
+            <li><a href="index.html" >INICIO</a></li>
+            <li><a href="color.html" >COLOR</a></li>
+            <li><a href="selectores.html" >SELECTORES</a></li>
+            <li><a href="longitudes.html" >LONGITUDES</a></li>
+            <li><a href="flexbox.html" >FLEXBOX</a></li>
+            <li><a href="practicaCss.html">PRACTICA CSS</a></li>
+        </ul>
+    </nav>
+    <h1>CSS</h1>
+    <h2>MODELOS DE CAJAS</h2>
+    <p>
+        Cada elemento de un documento se considera una caja. CSS determina el tamaño, posicion y propiedades(color, fondo, el ancho del borde, etc).
+    </p>
+    <p>
+        Cada caja está compuesta de cuatra partes:
+    </p>
+    <center><img src="modeloCaja.png"  alt="" width="50%" height="50%" /></center>
+    <hr>
+    <h3>CONTENIDO</h3>
+    <p>
+        Es el área donde se encuentra el contenido del elemento(texto, imagen, etc). El tamaño puede ser definido explícitamente con las propiedades:    
+    </p>
+    <table>
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Enlace</th>
+            </tr>
+        </thead>
+        <tbody>            
+            <tr>
+                <td>width</td>
+                <td><a href="https://developer.mozilla.org/en/docs/Web/CSS/width" target="_blank">Ir a pagina</a></td>
+            </tr>
+            <tr>
+                <td>min-width</td>
+                <td><a href="https://developer.mozilla.org/en/docs/Web/CSS/width" target="_blank">Ir a pagina</a></td>
+            </tr>
+            <tr>
+                <td>max-width</td>
+                <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/max-width" target="_blank">Ir a pagina</a></td>
+            </tr>
+            <tr>
+                <td>height</td>
+                <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/height" target="_blank">Ir a pagina</a></td>
+            </tr>
+            <tr>
+                <td>min-height</td>
+                <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/min-height" target="_blank">Ir a pagina</a></td>
+            </tr>
+            <tr>
+                <td>max-height</td>
+                <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/max-height" target="_blank">Ir a pagina</a></td>
+            </tr>
+        </tbody>
+    </table>
+    <hr>
+    <h3>RELLENO</h3>
+    <p>
+        Es el área de relleno del elemento. El grosor del relleno está determinado por las propiedades:    
+    </p>
+    <table>
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Enlace</th>
+            </tr>
+        </thead>
+        <tbody>            
+            <tr>
+                <td>padding-top</td>
+                <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/padding-top" target="_blank">Ir a pagina</a></td>
+            </tr>
+            <tr>
+                <td>padding-right</td>
+                <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/padding-right" target="_blank">Ir a pagina</a></td>
+            </tr>
+            <tr>
+                <td>padding-bottom</td>
+                <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/padding-bottom" target="_blank">Ir a pagina</a></td>
+            </tr>
+            <tr>
+                <td>padding-left</td>
+                <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/padding-left" target="_blank">Ir a pagina</a></td>
+            </tr>
+            <tr>
+                <td>padding</td>
+                <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/padding" target="_blank">Ir a pagina</a></td>
+            </tr>
+        </tbody>
+    </table>
+    <hr>
+    <h3>BORDE</h3>
+    <p>
+        Es el borde del elemento. El grosor, color y estilo del borde está determinado por las propiedades:    
+    </p>
+    <table>
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Enlace</th>
+            </tr>
+        </thead>
+        <tbody>            
+            <tr>
+                <td>border-width</td>
+                <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/border-width" target="_blank">Ir a pagina</a></td>
+            </tr>
+            <tr>
+                <td>border-style</td>
+                <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/border-style" target="_blank">Ir a pagina</a></td>
+            </tr>
+            <tr>
+                <td>border-color</td>
+                <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/border-color" target="_blank">Ir a pagina</a></td>
+            </tr>
+            <tr>
+                <td>border</td>
+                <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/border" target="_blank">Ir a pagina</a></td>
+            </tr>
+        </tbody>
+    </table>
+    <hr>
+    <h3>MARGEN</h3>
+    <p>
+        Es el margen del elemento. Se usa para separar el elemento de sus vecinos. El grosor del margen está determinado por las propiedades:    </p>
+    <table>
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Enlace</th>
+            </tr>
+        </thead>
+        <tbody>            
+            <tr>
+                <td>margin-top</td>
+                <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/margin-top" target="_blank">Ir a pagina</a></td>
+            </tr>
+            <tr>
+                <td>margin-right</td>
+                <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/margin-right" target="_blank">Ir a pagina</a></td>
+            </tr>
+            <tr>
+                <td>margin-bottom</td>
+                <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/margin-bottom" target="_blank">Ir a pagina</a></td>
+            </tr>
+            <tr>
+                <td>margin-left</td>
+                <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/margin-left" target="_blank">Ir a pagina</a></td>
+            </tr>
+            <tr>
+                <td>margin</td>
+                <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/margin" target="_blank">Ir a pagina</a></td>
+            </tr>
+        </tbody>
+    </table>
+    <hr>
+    <h3>CAJAS EN BLOQUE</h3>
+    <div>
+        <p>
+            Ocupan todo el espacio disponible en su contenedor aunque sus contenidos no lleguen al final de la línea.    
+        </p>
+        <p>
+            Siempre comienzan en una nueva línea.
+        </p>
+        <p>
+            Las propiedades width y height se respetan
+        </p>
+        <p>
+            Las propiedades padding, margin y border harán que el contenido que rodea a la caja,  se aleje de esta.
+        </p>
+    </div>
+    <hr>
+    <h3>CAJAS EN LINEA</h3>
+    <div>
+        <p>
+            Estas cajas solo ocupan el espacio necesario para mostrar su contenido. No empiezan en una nueva línea.
+        </p>
+        <p>
+            Las propiedades width y height no se respetan
+        </p>
+        <p>
+            Las propiedades padding, margin y border verticales se aplican, pero no harán que el contenido que rodea a la caja en la parte superior e inferior,  se aleje de esta.
+        </p>
+        <p>
+            Las propiedades padding, margin y border horizontales se aplican, y harán que el contenido que rodea a la caja en la parte izquierda y derecha,  se aleje de esta.
+        </p>
+    </div>
+    <hr>
+    <h3>CAJAS EN BLOQUE</h3>
+    <div>
+        <p>
+            Ocupan todo el espacio disponible en su contenedor aunque sus contenidos no lleguen al final de la línea.    
+        </p>
+        <p>
+            Siempre comienzan en una nueva línea.
+        </p>
+        <p>
+            Las propiedades width y height se respetan
+        </p>
+        <p>
+            Las propiedades padding, margin y border harán que el contenido que rodea a la caja,  se aleje de esta.
+        </p>
+    </div>
+    <hr>
+    <h3>UN ENFOQUE MIXTO</h3>
+    <div>
+        <p>
+            No comienzan en una nueva línea.
+        </p>
+        <p>
+            Las propiedades width y height se respetan
+        </p>
+        <p>
+            Las propiedades padding, margin y border harán que el contenido que rodea a la caja,  se aleje de esta.
+        </p>
+    </div>
+    <div>
+        <p>
+            Resumen del comportamiento de las cajas. 
+        </p>
+    </div>
+    <table>
+        <thead>
+            <tr>
+                <th>Propiedad display</th>
+                <th>Ocupan todo el espacio</th>
+                <th>Nueva Linea</th>
+                <th>Padding horizontal</th>
+                <th>Padding vertical</th>
+                <th>Margin horizontal</th>
+                <th>Margin vertical</th>
+                <th>Border horizontal</th>
+                <th>Border vertical</th>
+                <th>Respect width</th>
+                <th>Respect height</th>
+            </tr>
+        </thead>
+        <tbody>            
+            <tr>
+                <td>block</td>
+                <td>Si</td>
+                <td>Si</td>
+                <td>Si</td>
+                <td>Si</td>
+                <td>Si</td>
+                <td>Si</td>
+                <td>Si</td>
+                <td>Si</td>
+                <td>Si</td>
+                <td>Si</td>
+            </tr>
+            <tr>
+                <td>inline</td>
+                <td>No</td>
+                <td>No</td>
+                <td>Si</td>
+                <td>No</td>
+                <td>Si</td>
+                <td>No</td>
+                <td>Si</td>
+                <td>No</td>
+                <td>No</td>
+                <td>No</td>
+            </tr>
+            <tr>
+                <td>inline-block</td>
+                <td>No</td>
+                <td>No</td>
+                <td>Si</td>
+                <td>Si</td>
+                <td>Si</td>
+                <td>Si</td>
+                <td>Si</td>
+                <td>Si</td>
+                <td>Si</td>
+                <td>Si</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

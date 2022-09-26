@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen" />   
+
+</head>
+<body>
+    <nav id="menu">
+        <ul>
+            <li><a href="index.html" >INICIO</a></li>
+            <li><a href="color.html" >COLOR</a></li>
+            <li><a href="selectores.html" >SELECTORES</a></li>
+            <li><a href="longitudes.html" >LONGITUDES</a></li>
+            <li><a href="modeloCajas.html" >MODELO DE CAJAS</a></li>
+            <li><a href="practicaCss.html">PRACTICA CSS</a></li>
+
+        </ul>
+    </nav>
+    <h1>CSS</h1>
+    <hr>
+    <h2>CONTENEDOR FLEXIBLE Y ELEMENTOS FLEXIBLES</h2>
+    <p>
+        La propiedad display con valor flex o inline-flex nos permite establecer un contenedor flexible. Los hijos del contenedor flexible se llaman elementos flexibles.    
+    </p>
+    <center><img src="contenedor-elemento.png"  alt="" width="50%" height="50%" /></center>
+    
+    <h3>TERMINOS IMPORTANTES</h3>
+    <center><img src="terminos.png"  alt="" width="50%" height="50%" /></center>
+    <h4>Eje principal (Anticucho de elementos flexibles)</h4>
+    <p>
+        Es un eje a lo largo del cual se disponen los elementos flexibles. No es necesariamente horizontal; depende de la propiedad flex-direction    
+    </p>
+    <h4>Lado inicial del eje principal | Lado final del eje principal</h4>
+    <p>
+        Los elementos flexibles se colocan dentro del contenedor comenzando desde el Lado inicial del eje principal yendo al lado final del eje principal
+    </p>
+    <h4>Lineas flexibles</h4>
+    <p>
+        Las líneas flexibles son construcciones imaginarias que alojan a los elementos flexibles. Pueden existir varias o una linea flexible dentro de un contenedor flexible
+    </p>
+    <center><img src="lineas-flexibles.png"  alt="" width="50%" height="50%" /></center>
+    <h4>Eje transversal (Anticucho de lineas flexibles)</h4>
+    <p>Es un eje a lo largo del cual se disponen las lineas flexibles. Es un eje perpendicular al eje principal.</p>
+    <h4>Lado inicial del eje transversal | Lado final del eje transversal</h4>
+    <p>Las líneas flexibles se colocan en el contenedor comenzando en el lado inicial del eje transversal yendo hacia el lado final del eje transversal.</p>
+    <h4>Tamaño principal</h4>
+    <p>El tamaño principal de un contenedor o un elemento flexible es su ancho (width) cuando el eje principal es horizontal y es su alto (height) cuando el eje principal es vertical.</p>
+    <h4>Tamaño transversal</h4>
+    <p>El tamaño transversal de un contenedor o un elemento flexible es su alto (height) cuando el eje transversal es vertical y es su ancho (width) cuando el eje transversal es horizontal.</p>
+
+    <hr>
+    <h2>ESTABLECER LA DIRECCIÓN DEL EJE PRINCIPAL DEL CONTENEDOR FLEXIBLE</h2>
+    <p>La propiedad flex-direction permite establecer la dirección del eje principal del contenedor flexible. Los elementos flexibles se colocan a en la dirección del eje principal.</p>
+    <h3>EJE PRINCIPAL DE IZQUIERDA A DERECHA</h3>
+    <pre>
+        .contenedor{
+            display: flex;
+            <strong class="titulo">flex-direction: row;</strong> [VALOR  POR DEFECTO] 
+        }
+    </pre>
+    <center><img src="direction-row.png"  alt="" width="50%" height="50%" /></center>
+
+    <h3>EJE PRINCIPAL DE DERECHA A IZQUIERDA</h3>
+    <pre>
+        .contenedor{
+            display: flex;
+            <strong class="titulo">flex-direction: row-reverse;</strong> [VALOR  POR DEFECTO] 
+        }
+    </pre>
+    <center><img src="direction-row-reverse.png"  alt="" width="50%" height="50%" /></center>
+
+    <h3>EJE PRINCIPAL DE ARRIBA A ABAJO</h3>
+    <pre>
+        .contenedor{
+            display: flex;
+            <strong class="titulo">flex-direction: column;</strong> [VALOR  POR DEFECTO] 
+        }
+    </pre>
+    <center><img src="direction-column.png"  alt="" width="50%" height="50%" /></center>
+
+    <h3>EJE PRINCIPAL DE ABAJO A ARRIBA</h3>
+    <pre>
+        .contenedor{
+            display: flex;
+            <strong class="titulo">flex-direction: column-reverse;</strong> [VALOR  POR DEFECTO] 
+        }
+    </pre>
+    <center><img src="direction-column-reverse.png"  alt="" width="50%" height="50%" /></center>
+
+    <hr>
+    <h2>CONFIGURAR EL CONTENEDOR FLEXIBLE PARA QUE SEA MULTI LINEA O DE UNA SOLA LINEA, Y ESTABLECER LA DIRECCION DE SU EJE TRANSVERSAL</h2>
+    <p>La propiedad flex-wrap controla si el contenedor flexible es de una sola línea o de varias líneas y la dirección del eje transversal, que determina la dirección en la que se alinean las líneas flexibles.</p>
+    <h3>CONTENEDOR FLEXIBLE DE UNA SOLA LINEA (LOS ELEMENTOS FLEXIBLES SE COLOCAN DE IZQUIERDA A DERECHA)</h3>
+    <pre>
+        .contenedor{
+            display: flex;
+            flex-direction: row;
+            <strong class="titulo">flex-wrap: nowrap;</strong> [VALOR  POR DEFECTO] 
+        }
+    </pre>
+    <center><img src="uno.png"  alt="" width="50%" height="50%" /></center>
+
+    <h3>CONTENEDOR FLEXIBLE DE UNA SOLA LINEA (LOS ELEMENTOS FLEXIBLES SE COLOCAN DE DERECHA A IZQUIERDA)</h3>
+    <pre>
+        .contenedor{
+            display: flex;
+            flex-direction: row-reverse;
+            <strong class="titulo">flex-wrap: nowrap;</strong> [VALOR  POR DEFECTO] 
+        }
+    </pre>
+    <center><img src="dos.png"  alt="" width="50%" height="50%" /></center>
+
+    <h3>CONTENEDOR FLEXIBLE DE UNA SOLA LINEA (LOS ELEMENTOS FLEXIBLES SE COLOCAN DE ARRIBA A ABAJO)</h3>
+    <pre>
+        .contenedor{
+            display: flex;
+            flex-direction: column;
+            <strong class="titulo">flex-wrap: nowrap;</strong> [VALOR  POR DEFECTO] 
+        }
+    </pre>
+    <center><img src="tres.png"  alt="" width="50%" height="50%" /></center>
+
+    <h3>CONTENEDOR FLEXIBLE DE UNA SOLA LINEA (LOS ELEMENTOS FLEXIBLES SE COLOCAN DE ABAJO A ARRIBA)</h3>
+    <pre>
+        .contenedor{
+            display: flex;
+            flex-direction: column-reverse;
+            <strong class="titulo">flex-wrap: nowrap;</strong> [VALOR  POR DEFECTO] 
+        }
+    </pre>
+    <center><img src="cuatro.png"  alt="" width="50%" height="50%" /></center>
+
+    <h3>CONTENEDOR FLEXIBLE DE VARIAS LINEAS (LOS ELEMENTOS FLEXIBLES SE COLOCAN DE IZQUIERDA A DERECHA)</h3>
+    <pre>
+        .contenedor{
+            display: flex;
+            flex-direction: row;
+            <strong class="titulo">flex-wrap: wrap;</strong> [VALOR  POR DEFECTO] 
+        }
+    </pre>
+    <center><img src="cinco.png"  alt="" width="50%" height="50%" /></center>
+
+    <h3>CONTENEDOR FLEXIBLE DE VARIAS LINEAS (LOS ELEMENTOS FLEXIBLES SE COLOCAN DE DERECHA A IZQUIERDA)</h3>
+    <pre>
+        .contenedor{
+            display: flex;
+            flex-direction: row-reverse;
+            <strong class="titulo">flex-wrap: wrap;</strong> [VALOR  POR DEFECTO] 
+        }
+    </pre>
+    <center><img src="seis.png"  alt="" width="50%" height="50%" /></center>
+
+    <h3>CONTENEDOR FLEXIBLE DE VARIAS LINEAS (LOS ELEMENTOS FLEXIBLES SE COLOCAN DE ARRIBA A ABAJO)</h3>
+    <pre>
+        .contenedor{
+            display: flex;
+            flex-direction: column;
+            <strong class="titulo">flex-wrap: wrap;</strong> [VALOR  POR DEFECTO] 
+        }
+    </pre>
+    <center><img src="siete.png"  alt="" width="50%" height="50%" /></center>
+
+    <h3>CONTENEDOR FLEXIBLE DE VARIAS LINEAS (LOS ELEMENTOS FLEXIBLES SE COLOCAN DE ABAJO A ARRIBA)</h3>
+    <pre>
+        .contenedor{
+            display: flex;
+            flex-direction: column-reverse;
+            <strong class="titulo">flex-wrap: wrap;</strong> [VALOR  POR DEFECTO] 
+        }
+    </pre>
+    <center><img src="ocho.png"  alt="" width="50%" height="50%" /></center>
+
+    <h3>CONTENEDOR FLEXIBLE DE VARIAS LINEAS (LOS ELEMENTOS FLEXIBLES SE COLOCAN DE IZQUIERDA A DERECHA)</h3>
+    <pre>
+        .contenedor{
+            display: flex;
+            flex-direction: row;
+            <strong class="titulo">flex-wrap: wrap-reverse;</strong> [VALOR  POR DEFECTO] 
+        }
+    </pre>
+    <center><img src="nueve.png"  alt="" width="50%" height="50%" /></center>
+
+    <h3>CONTENEDOR FLEXIBLE DE VARIAS LINEAS IZQUIERDA (LOS ELEMENTOS FLEXIBLES SE COLOCAN DE DERECHA A IZQUIERDA)</h3>
+    <pre>
+        .contenedor{
+            display: flex;
+            flex-direction: row_reverse;
+            <strong class="titulo">flex-wrap: wrap-reverse;</strong> [VALOR  POR DEFECTO] 
+        }
+    </pre>
+    <center><img src="diez.png"  alt="" width="50%" height="50%" /></center>
+
+    <h3>CONTENEDOR FLEXIBLE VARIAS LINEAS (LOS ELEMENTOS FLEXIBLES SE COLOCAN DE ARRIBA A ABAJO)</h3>
+    <pre>
+        .contenedor{
+            display: flex;
+            flex-direction: column;
+            <strong class="titulo">flex-wrap: wrap-reverse;</strong> [VALOR  POR DEFECTO] 
+        }
+    </pre>
+    <center><img src="once.png"  alt="" width="50%" height="50%" /></center>
+
+    <h3>CONTENEDOR FLEXIBLE DE VARIAS LINEAS (LOS ELEMENTOS FLEXIBLES SE COLOCAN DE ABAJO A ARRIBA)</h3>
+    <pre>
+        .contenedor{
+            display: flex;
+            flex-direction: column-reverse;
+            <strong class="titulo">flex-wrap: wrap-reverse;</strong> [VALOR  POR DEFECTO] 
+        }
+    </pre>
+    <center><img src="doce.png"  alt="" width="50%" height="50%" /></center>
+
+
+
+

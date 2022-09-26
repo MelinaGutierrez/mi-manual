@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen" />   
+
+</head>
+<body>
+    <nav id="menu">
+        <ul>
+            <li><a href="index.html" >INICIO</a></li>
+            <li><a href="color.html" >COLOR</a></li>
+            <li><a href="selectores.html" >SELECTORES</a></li>
+            <li><a href="modeloCajas.html" >MODELO DE CAJAS</a></li>
+            <li><a href="flexbox.html" >FLEXBOX</a></li>
+            <li><a href="practicaCss.html">PRACTICA CSS</a></li>
+        </ul>
+    </nav>
+    <h1>CSS</h1>
+    <h2>LONGITUDES</h2>
+    <h3>ABSOLUTA</h3>
+    <p>
+        Todas las unidades siguientes son unidades de longitud absoluta: no son relativas a nada más y en general se considera que siempre tienen el mismo tamaño.
+    </p>
+    <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_and_units#:~:text=things%20will%20become.-,Absolute%20length%20units,-The%20following%20are" target="_blank">Ir a pagina</a>
+    <table>
+        <thead>
+            <tr>
+                <th>Unidad</th>
+                <th>Nombre</th>
+                <th>Sintaxis</th>
+            </tr>
+        </thead>
+        <tbody>            
+            <tr>
+                <td>cm</td>
+                <td>Centímetros</td>
+                <td>1cm = 96px/2,54</td>
+            </tr>
+            <tr>
+                <td>mm</td>
+                <td>Milímetros</td>
+                <td>1mm = 1/10 de 1cm</td>
+            </tr>
+            <tr>
+                <td>pt</td>
+                <td>Puntos</td>
+                <td>1pt = 1/72 de 1in</td>
+            </tr>
+            <tr>
+                <td>px</td>
+                <td>Píxeles</td>
+                <td>1px = 1/96 de 1in</td>
+            </tr>
+        </tbody>
+    </table>
+    <h3>RELATIVA</h3>
+    <p>
+        Las unidades de longitud relativas son relativas a otra cosa, tal vez el tamaño de la fuente del elemento principal o el tamaño de la ventana gráfica.
+    </p>
+    <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_and_units#:~:text=px%20(pixels).-,Relative%20length%20units,-Relative%20length%20units" target="_blank">Ir a pagina</a>
+    <table>
+        <thead>
+            <tr>
+                <th>Unidad</th>
+                <th>Relativo a</th>
+            </tr>
+        </thead>
+        <tbody>            
+            <tr>
+                <td>rem</td>
+                <td>Relativo al tamaño de la letra del elemento root (El elemento html)</td>
+            </tr>
+            <tr>
+                <td>%</td>
+                <td>Relativo a otro valor. Si establecemos el valor de la propiedad font-size, será un porcentaje del font-size del elemento padre.
+                    Si usamos un porcentaje para establecer el valor del elemento width, será un porcentaje del width del elemento padre.  
+                </td>
+            </tr>
+            <tr>
+                <td>vm</td>
+                <td>Relativo al ancho del viewport</td>
+            </tr>
+            <tr>
+                <td>vh</td>
+                <td>Relativo al alto del viewport</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
