@@ -1,5 +1,5 @@
 body{
-    background-image: url("img/fondo_inicio.jpg");
+    background-image: url("img/fondo_inicio1.jpg");
     background-position: center;
     background-repeat: no-repeat;
     /* La imagen se fija en la ventana de visualización para que la altura de la imagen no supere a la del contenido */
@@ -31,6 +31,8 @@ h2 {
 #descripcion{
     display:flex;
     justify-content:center;
+    align-items:center;
+    width: 100%;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: rgba(255, 85, 138, 1);
     text-shadow: 0 1px rgb(145, 0, 89);
@@ -98,7 +100,7 @@ table {
     color: rgb(18, 55, 55);
 }
 table tr:hover {
-    background-color: rgb(253, 206, 253);
+    background-color: rgb(255, 141, 255);
     cursor: pointer;
 }
 td, th {
